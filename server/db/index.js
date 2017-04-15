@@ -9,7 +9,7 @@ dbConnection = mysql.createConnection({
   database: 'chat'
 });
 dbConnection.connect();
-exports = dbConnection;
+exports.connect = dbConnection;
 
 var tablename = "messages"; // TODO: fill this out
 // dbConnection.query('drop database chat;');
