@@ -12,8 +12,7 @@ module.exports = {
     // Ditto as above
     get: function (req, res) {},
     post: function (req, res) {
-      res.statusCode = 200;      
-      res.end();
+      models.users.post(req.body);
     }
   }
 };
